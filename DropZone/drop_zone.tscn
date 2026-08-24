@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx623nwevhdj5"]
+
+[ext_resource type="Script" path="res://DropZone/drop_zone.gd" id="1_tadxs"]
+
+[node name="DropZone" type="ColorRect"]
+z_index = -1
+custom_minimum_size = Vector2(125, 175)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.174322, 0.497401, 1.82897e-06, 1)
+script = ExtResource("1_tadxs")
+
+[node name="SuitSymbol" type="Sprite2D" parent="."]

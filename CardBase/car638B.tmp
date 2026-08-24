@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1yp0nmmjaf78"]
+
+[ext_resource type="Script" path="res://CardBase/CardBase.gd" id="1_niy2q"]
+
+[node name="CardBase" type="MarginContainer"]
+offset_right = 125.0
+offset_bottom = 175.0
+pivot_offset = Vector2(62.5, 87.5)
+script = ExtResource("1_niy2q")
+
+[node name="Card" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+centered = false

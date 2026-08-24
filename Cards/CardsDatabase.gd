@@ -1,0 +1,118 @@
+enum {clubs_ace,clubs_2,clubs_3,clubs_4,clubs_5,clubs_6,clubs_7,
+clubs_8,clubs_9,clubs_10,clubs_jack,clubs_queen,clubs_king,
+diamonds_ace,diamonds_2,diamonds_3,diamonds_4,diamonds_5,diamonds_6,diamonds_7,
+diamonds_8,diamonds_9,diamonds_10,diamonds_jack,diamonds_queen,diamonds_king,
+hearts_ace,hearts_2,hearts_3,hearts_4,hearts_5,hearts_6,hearts_7,
+hearts_8,hearts_9,hearts_10,hearts_jack,hearts_queen,hearts_king,spades_ace,spades_2,spades_3,spades_4,spades_5,spades_6,spades_7,
+spades_8,spades_9,spades_10,spades_jack,spades_queen,spades_king,
+}
+
+const DATA ={
+	clubs_ace:
+		["clubs_ace.png",false,1,"clubs"],
+	clubs_2:
+		["clubs_2.png",false,2,"clubs"],
+	clubs_3:
+		["clubs_3.png",false,3,"clubs"],
+	clubs_4:
+		["clubs_4.png",false,4,"clubs"],
+	clubs_5:
+		["clubs_5.png",false,5,"clubs"],
+	clubs_6:
+		["clubs_6.png",false,6,"clubs"],
+	clubs_7:
+		["clubs_7.png",false,7,"clubs"],
+	clubs_8:
+		["clubs_8.png",false,8,"clubs"],
+	clubs_9:
+		["clubs_9.png",false,9,"clubs"],
+	clubs_10:
+		["clubs_10.png",false,10,"clubs"],
+	clubs_jack:
+		["clubs_jack.png",false,11,"clubs"],
+	clubs_queen:
+		["clubs_queen.png",false,12,"clubs"],
+	clubs_king:
+		["clubs_king.png",false,13,"clubs"],
+	diamonds_ace:
+		["diamonds_ace.png",true,1,"diamonds"],
+	diamonds_2:
+		["diamonds_2.png",true,2,"diamonds"],
+	diamonds_3:
+		["diamonds_3.png",true,3,"diamonds"],
+	diamonds_4:
+		["diamonds_4.png",true,4,"diamonds"],
+	diamonds_5:
+		["diamonds_5.png",true,5,"diamonds"],
+	diamonds_6:
+		["diamonds_6.png",true,6,"diamonds"],
+	diamonds_7:
+		["diamonds_7.png",true,7,"diamonds"],
+	diamonds_8:
+		["diamonds_8.png",true,8,"diamonds"],
+	diamonds_9:
+		["diamonds_9.png",true,9,"diamonds"],
+	diamonds_10:
+		["diamonds_10.png",true,10,"diamonds"],
+	diamonds_jack:
+		["diamonds_jack.png",true,11,"diamonds"],
+	diamonds_queen:
+		["diamonds_queen.png",true,12,"diamonds"],
+	diamonds_king:
+		["diamonds_king.png",true,13,"diamonds"],
+	hearts_ace:
+		["hearts_ace.png",true,1,"hearts"],
+	hearts_2:
+		["hearts_2.png",true,2,"hearts"],
+	hearts_3:
+		["hearts_3.png",true,3,"hearts"],
+	hearts_4:
+		["hearts_4.png",true,4,"hearts"],
+	hearts_5:
+		["hearts_5.png",true,5,"hearts"],
+	hearts_6:
+		["hearts_6.png",true,6,"hearts"],
+	hearts_7:
+		["hearts_7.png",true,7,"hearts"],
+	hearts_8:
+		["hearts_8.png",true,8,"hearts"],
+	hearts_9:
+		["hearts_9.png",true,9,"hearts"],
+	hearts_10:
+		["hearts_10.png",true,10,"hearts"],
+	hearts_jack:
+		["hearts_jack.png",true,11,"hearts"],
+hearts_queen:
+		["hearts_queen.png",true,12,"hearts"],
+	hearts_king:
+		["hearts_king.png",true,13,"hearts"],
+	spades_ace:
+		["spades_ace.png",false,1,"spades"],
+	spades_2:
+		["spades_2.png",false,2,"spades"],
+	spades_3:
+		["spades_3.png",false,3,"spades"],
+	spades_4:
+		["spades_4.png",false,4,"spades"],
+	spades_5:
+		["spades_5.png",false,5,"spades"],
+	spades_6:
+		["spades_6.png",false,6,"spades"],
+	spades_7:
+		["spades_7.png",false,7,"spades"],
+	spades_8:
+		["spades_8.png",false,8,"spades"],
+	spades_9:
+		["spades_9.png",false,9,"spades"],
+	spades_10:
+		["spades_10.png",false,10,"spades"],
+	spades_jack:
+		["spades_jack.png",false,11,"spades"],
+	spades_queen:
+		["spades_queen.png",false,12,"spades"],
+	spades_king:
+		["spades_king.png",false,13,"spades"],
+}
+
+var LEFT=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,
+30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51]

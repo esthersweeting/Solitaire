@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://l7e5bkuqdjsg"]
+
+[ext_resource type="Texture2D" uid="uid://1ggpflbkkr6b" path="res://PlaySpace/green_background.png" id="1_afsf7"]
+[ext_resource type="Script" path="res://PlaySpace/play_space.gd" id="1_jni8j"]
+[ext_resource type="Texture2D" uid="uid://c32ob80pp31eh" path="res://Cards/red2.png" id="3_njho4"]
+[ext_resource type="Script" path="res://PlaySpace/Deck/DeckArea.gd" id="3_vtnql"]
+
+[sub_resource type="GDScript" id="GDScript_rk5ym"]
+script/source = "extends Sprite2D
+var pos=get_global_mouse_position()
+var inside:bool = self.get_rect().has_point(self.to_local(pos))
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	if inside:
+		print (\"hi\")
+	#pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2drf"]
+size = Vector2(119, 167)
+
+[node name="PlaySpace" type="Node2D"]
+script = ExtResource("1_jni8j")
+
+[node name="Cards" type="Node" parent="."]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(1809.25, 1202.75)
+scale = Vector2(5.4049, 6.31299)
+texture = ExtResource("1_afsf7")
+
+[node name="DropZones" type="Node" parent="."]
+
+[node name="DeckArea" type="Area2D" parent="."]
+script = ExtResource("3_vtnql")
+
+[node name="Deck" type="Sprite2D" parent="DeckArea"]
+z_index = 1
+position = Vector2(1000, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_njho4")
+centered = false
+script = SubResource("GDScript_rk5ym")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeckArea"]
+position = Vector2(1059, 86)
+shape = SubResource("RectangleShape2D_u2drf")
+
+[node name="Stacks" type="Node" parent="."]

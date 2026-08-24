@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0atmp2s0ia76"]
+
+[ext_resource type="Script" path="res://StackCards/stack_cards.gd" id="1_eqkng"]
+[ext_resource type="Script" path="res://StackCards/ClickBit.gd" id="2_1jxng"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7tw0"]
+size = Vector2(151.5, 167)
+
+[node name="StackCards" type="ColorRect"]
+process_priority = 2
+z_index = -1
+custom_minimum_size = Vector2(125, 400)
+offset_right = 125.0
+offset_bottom = 407.0
+color = Color(0.174322, 0.497401, 1.82897e-06, 1)
+script = ExtResource("1_eqkng")
+
+[node name="ClickBit" type="Area2D" parent="."]
+script = ExtResource("2_1jxng")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickBit"]
+position = Vector2(74.25, 82)
+shape = SubResource("RectangleShape2D_e7tw0")
