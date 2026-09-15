@@ -1,7 +1,8 @@
 # Solitaire
 
 An implementation of Solitaire built as my first real project involving a graphical interface.
-![Uploading image.png…]()
+<img width="575" height="353" alt="image" src="https://github.com/user-attachments/assets/9c47d037-a020-4090-afbd-26fc545546f6" />
+
 
 
 ## Overview
