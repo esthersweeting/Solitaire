@@ -1,8 +1,6 @@
 # Solitaire
 
 An implementation of Solitaire built as my first real project involving a graphical interface.
-<img width="575" height="353" alt="image" src="https://github.com/user-attachments/assets/9c47d037-a020-4090-afbd-26fc545546f6" />
-
 
 
 ## Overview
@@ -13,8 +11,12 @@ As an early project, the main goal was experimentation and learning. I built it 
 
 Because of that, the project is less about having a perfect architecture and more about being the starting point for my experience with graphical programming and interactive applications.
 
-## Features
+## Gameplay
+<img width="575" height="353" alt="image" src="https://github.com/user-attachments/assets/9c47d037-a020-4090-afbd-26fc545546f6" />
 
+The game features the standard Solitaire layout, with a deck, discard pile, foundation piles and tableau. Players can move cards between stacks according to the rules of the game.
+
+## Features
 * Graphical card-based game board
 * 52-card deck
 * Card suits and values
